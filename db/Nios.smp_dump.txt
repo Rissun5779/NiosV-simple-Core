@@ -1,0 +1,9 @@
+
+State Machine - |Nios_V|Nios_V_Nios_V:nios_v|niosv_dm_top:dbg_mod|niosv_debug_module:dm_inst|dm_state
+Name dm_state.EXE_PNDG dm_state.RESUMING dm_state.CMD_EXE dm_state.HALTED dm_state.HALTREQ dm_state.IDLE 
+dm_state.IDLE 0 0 0 0 0 0 
+dm_state.HALTREQ 0 0 0 0 1 1 
+dm_state.HALTED 0 0 0 1 0 1 
+dm_state.CMD_EXE 0 0 1 0 0 1 
+dm_state.RESUMING 0 1 0 0 0 1 
+dm_state.EXE_PNDG 1 0 0 0 0 1 
