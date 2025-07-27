@@ -1,0 +1,97 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/rissun57/Desktop/Nios/Nios_V.qsys --block-symbol-file --output-directory=/home/rissun57/Desktop/Nios/Nios_V --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Nios/Nios_V.qsys
+Progress: Reading input file
+Progress: Adding DEBUG [altera_avalon_jtag_uart 24.1]
+Progress: Parameterizing module DEBUG
+Progress: Adding Nios_V [intel_niosv_m 26.0.0]
+Progress: Parameterizing module Nios_V
+Progress: Adding SRAM [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module SRAM
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Nios_V.DEBUG: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: Nios_V.Nios_V: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: Nios_V.Nios_V: Properties (associatedClock) have been set on interface ndm_reset_in - in composed mode these are ignored
+Warning: Nios_V.Nios_V: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: Nios_V.Nios_V: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/rissun57/Desktop/Nios/Nios_V.qsys --synthesis=VERILOG --output-directory=/home/rissun57/Desktop/Nios/Nios_V/synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Nios/Nios_V.qsys
+Progress: Reading input file
+Progress: Adding DEBUG [altera_avalon_jtag_uart 24.1]
+Progress: Parameterizing module DEBUG
+Progress: Adding Nios_V [intel_niosv_m 26.0.0]
+Progress: Parameterizing module Nios_V
+Progress: Adding SRAM [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module SRAM
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Nios_V.DEBUG: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: Nios_V.Nios_V: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: Nios_V.Nios_V: Properties (associatedClock) have been set on interface ndm_reset_in - in composed mode these are ignored
+Warning: Nios_V.Nios_V: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: Nios_V.Nios_V: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: Nios_V: Generating "Nios_V" for QUARTUS_SYNTH
+Info: DEBUG: "Nios_V" instantiated altera_avalon_jtag_uart "DEBUG"
+Info: Nios_V: "Nios_V" instantiated intel_niosv_m "Nios_V"
+Info: SRAM: Starting RTL generation for module 'Nios_V_SRAM'
+Info: SRAM:   Generation command is [exec /home/rissun57/intelFPGA_lite/24.1std/quartus/linux64/perl/bin/perl -I /home/rissun57/intelFPGA_lite/24.1std/quartus/linux64/perl/lib -I /home/rissun57/intelFPGA_lite/24.1std/quartus/sopc_builder/bin/europa -I /home/rissun57/intelFPGA_lite/24.1std/quartus/sopc_builder/bin -I /home/rissun57/intelFPGA_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/rissun57/intelFPGA_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/rissun57/intelFPGA_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Nios_V_SRAM --dir=/tmp/alt0296_2750441337419445733.dir/0003_SRAM_gen/ --quartus_dir=/home/rissun57/intelFPGA_lite/24.1std/quartus --verilog --config=/tmp/alt0296_2750441337419445733.dir/0003_SRAM_gen//Nios_V_SRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: SRAM: Done RTL generation for module 'Nios_V_SRAM'
+Info: SRAM: "Nios_V" instantiated altera_avalon_onchip_memory2 "SRAM"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Nios_V" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "Nios_V" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "Nios_V" instantiated altera_reset_controller "rst_controller"
+Info: niosv_reset_controller: "Generating: niosv_reset_controller"
+Info: hart: "Nios_V" instantiated intel_niosv_m_unit "hart"
+Info: timer_module: "Nios_V" instantiated intel_niosv_timer_msip "timer_module"
+Info: dbg_mod: "Nios_V" instantiated intel_niosv_dbg_mod "dbg_mod"
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/niosv_ram.sv
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/altera_reset_synchronizer.v
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/altera_reset_controller.v
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/altera_reset_controller.sdc
+Info: irq_mapper: "Nios_V" instantiated altera_irq_mapper "irq_mapper"
+Info: DEBUG_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "DEBUG_avalon_jtag_slave_translator"
+Info: Nios_V_data_manager_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "Nios_V_data_manager_agent"
+Info: DEBUG_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "DEBUG_avalon_jtag_slave_agent"
+Info: DEBUG_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "DEBUG_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: Nios_V_instruction_manager_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "Nios_V_instruction_manager_wr_limiter"
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file /home/rissun57/Desktop/Nios/Nios_V/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: niosv_reset_controller: "hart" instantiated intel_niosv_m_unit "niosv_reset_controller"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: Nios_V: Done "Nios_V" with 32 modules, 87 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
